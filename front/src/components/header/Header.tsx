@@ -1,7 +1,7 @@
 import React from 'react';
 import ConnectButton from './ConnectButton'
-import Toggle from './toggle';
-import SearchBar from './searchBar';
+import Toggle from './Toggle';
+import SearchBar from './SearchBar';
 
 
 const Header = () => {
