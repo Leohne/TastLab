@@ -1,11 +1,26 @@
 import React from 'react';
+import { useState } from 'react';
 
-const toggle = () => {
-    return (
-        <div>
-            Toggle
-        </div>
-    );
+
+const Toggle = () => {
+
+    const [isExpanded, setIsExpanded] = useState(false)
+
+    return (<div>
+        <button onClick={() => setIsExpanded(!isExpanded)}>
+            . . .
+        </button> {
+            isExpanded && <ul>
+                <li>Entrée
+                </li>
+                <li>Plat
+                </li>
+                <li>Desserts
+                </li>
+            </ul>
+        }
+    </div>);
+
 };
 
-export default toggle;
+export default Toggle;
