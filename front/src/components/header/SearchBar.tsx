@@ -2,8 +2,8 @@ import React from 'react';
 
 const searchBar = () => {
     return (
-        <div>
-            searchBAr
+        <div className='w-3/5'>
+            <input className='w-full h-full bg-white rounded' type='text'></input>
         </div>
     );
 };
