@@ -6,7 +6,7 @@ const Aside = () => {
 
     const [isExpanded, setIsExpanded] = useState(false)
 
-    return (<div className='text-blue-600 absolute left-0 top-0 h-16 w-1/5 py-2'>
+    return (<div className='text-blue-600 h-16 w-1/5 py-2'>
         <button onClick={() => setIsExpanded(!isExpanded)}
             className='w-full'
         >
