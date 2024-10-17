@@ -1,34 +1,30 @@
 import React from 'react';
 import { useState } from 'react';
-
+import { navigateToSearch } from '../../utils/navigateToSearch';
+import { useNavigate } from 'react-router-dom';
 
 const Aside = () => {
 
     const [isExpanded, setIsExpanded] = useState(false)
+    const navigate = useNavigate()
 
-    return (<div className='text-blue-600 h-16 w-1/5 py-2'>
-        <button onClick={() => setIsExpanded(!isExpanded)}
-            className='w-full'
-        >
-            {isExpanded ? 'Parcourir les recettes' : ' . . . '}
+    const handleSearch = (searchTerm: string) => {
+        console.log('calling handleSearch')
+        navigateToSearch(navigate, searchTerm);
+    }
+
+    return (<div>
+        <button onClick={() => setIsExpanded(!isExpanded)}>
+            . . .
         </button> {
             isExpanded && <ul>
-                <li><button>Entrées</button>
+                <li><button onClick={() => handleSearch("entree")} className='w-full h-full'>Entrée</button>
                 </li>
-                <li><button>Plats</button>
+                <li><button onClick={() => handleSearch("entree")} className='w-full h-full'>Entrée</button>
                 </li>
-                <li><button>Desserts</button>
+                <li><button onClick={() => handleSearch("entree")} className='w-full h-full'>Entrée</button>
                 </li>
-                <li><button>Français</button>
-                </li>
-                <li><button>Italien</button></li>
-                <li><button>Rapide</button></li>
-                <li><button>léger</button></li>
-                <li><button>Economique</button></li>
-                <li><button>Gateaux</button></li>
-                <li><button>Tartes</button></li>
             </ul>
-
         }
     </div>);
 
