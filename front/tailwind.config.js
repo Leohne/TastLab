@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'Louis':['"Louis cafe"'],
+        'Sugar':['"Sugar"'],
         'Itim':['"Itim"'],
         'sans':['"Louis cafe"']
       }

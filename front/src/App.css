@@ -7,6 +7,10 @@
     font-family: 'Louis cafe';
     src: url("../src/asset/Louis_cafe/Louis\ George\ Cafe.ttf") format('truetype');
   }
+@font-face {
+  font-family: 'Sugar';
+  src: url("../src/asset/Sugar Magic font/sugarmagicpersonaluseonly-jemyo.otf") format('opentype');
+}  
 }
 
 
