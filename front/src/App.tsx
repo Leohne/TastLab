@@ -7,6 +7,7 @@ import Recherche from './pages/recherche/Recherche'
 import Connexion from './pages/connexion/Connexion'
 import Recette from './pages/recette/Recette'
 import Error from './pages/Error/Error'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/search/:id" element={<Recette />}/>
         <Route path="/*" element={<Error />}/>
       </Routes>
+      <Footer/>
       </>
       </BrowserRouter>
     </div>
