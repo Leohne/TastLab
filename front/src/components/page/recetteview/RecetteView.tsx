@@ -8,10 +8,10 @@ interface plats {
     note: number; 
 }
 
-function RecetteView ( {plat} : {plat:plats[]} ) {
+const RecetteView: React.FC<{ plat: plats[]; isGrid: boolean }> = ({ plat, isGrid }) => {
 
     const recetteSearch = plat.map((plats) => {
-        return <div className=" w-1/2 p-10" key={plats.id}>
+        return <div className={`flex w-1/2 p-10 ${isGrid ? 'flex-col' : 'flex-row'}`} key={plats.id}>
                     <div className="flex justify-center w-3/4">
                         <img src={plats.cover} alt="image plat" className="flex justify-center w-15 object-cover" />
                     </div>
