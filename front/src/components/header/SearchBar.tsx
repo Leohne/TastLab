@@ -27,7 +27,7 @@ const SearchBar = () => {
                 onChange={handleInputChange}
                 placeholder="Tapez votre recherche ici..."
             />
-            <button className='w-2/5' type="submit">Rechercher</button>
+            <button className='w-2/5 hover:text-white' type="submit">Rechercher</button>
         </form>
     );
 };
