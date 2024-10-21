@@ -6,6 +6,7 @@ import Homepage from './pages/homepage/Homepage'
 import Recherche from './pages/recherche/Recherche'
 import Connexion from './pages/connexion/Connexion'
 import Recette from './pages/recette/Recette'
+import Error from './pages/Error/Error'
 
 function App() {
 
@@ -17,9 +18,10 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Homepage />}/>
-        <Route path="/recherche" element={<Recherche />}/>
-        <Route path="/connexion" element={<Connexion />}/>
-        <Route path="/recette/:id" element={<Recette />}/>
+        <Route path="/search" element={<Recherche />}/>
+        <Route path="/login" element={<Connexion />}/>
+        <Route path="/search/:id" element={<Recette />}/>
+        <Route path="/*" element={<Error />}/>
       </Routes>
       </>
       </BrowserRouter>

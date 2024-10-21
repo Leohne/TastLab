@@ -26,7 +26,7 @@ function Recherche () {
             </div>
         </div>
         <div className={`flex w-5/5 my-20 ${isGrid ? 'gride' : 'list'}`}>
-        <RecetteView plat={platData.plat} /> {/* mapper via server*/}
+        <RecetteView plat={platData.plat} isGrid={isGrid} /> {/* mapper via server*/}
         </div>
         </div>
     )

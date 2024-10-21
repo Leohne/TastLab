@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {  
+  @font-face {
+      font-family: 'Louis';
+      src: url(/front/src/asset/font/Louis_cafe/Louis_George_Cafe.ttf) format('ttf');
+    }
+}
+
 @layer components {
     .gride {
       @apply flex-wrap;
