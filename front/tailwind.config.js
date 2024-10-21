@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'Itim':['"Itim"']
+        'sans':['Louis']
       }
     },
   },
