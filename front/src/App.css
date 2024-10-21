@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {  
-  @font-face {
-      font-family: 'Louis';
-      src: url(/front/src/asset/font/Louis_cafe/Louis_George_Cafe.ttf) format('ttf');
-    }
+@layer base {
+@font-face {
+    font-family: 'Louis cafe';
+    src: url("../src/asset/Louis_cafe/Louis\ George\ Cafe.ttf") format('truetype');
+  }
+@font-face {
+  font-family: 'Sugar';
+  src: url("../src/asset/Sugar Magic font/sugarmagicpersonaluseonly-jemyo.otf") format('opentype');
+}  
 }
+
 
 @layer components {
     .gride {
@@ -15,5 +20,9 @@
     }
     .list {
         @apply flex-col;
+    }
+    body {
+      @apply bg-[#E9D7BF];
+      @apply h-[100vh]
     }
   }

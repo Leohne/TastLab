@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const ConnectButton = () => {
     return (
-        <div className=' w-1/5'>
-            <Link to="/login"><button className='bg-white-200'>Connectez Vous</button></Link>
+        <div className='text-center w-1/5'>
+            <Link to="/login"><button className='py-3 bg-white-200 hover:text-white'>Connectez Vous</button></Link>
         </div>
     );
 };

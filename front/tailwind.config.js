@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans':['Louis']
+        'Louis':['"Louis cafe"'],
+        'Sugar':['"Sugar"'],
+        'Itim':['"Itim"'],
+        'sans':['"Louis cafe"']
       }
     },
   },

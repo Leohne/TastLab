@@ -21,7 +21,7 @@
                     "id":"2",
                     "cover": "../public/asset/img/plat_enzo.webp",
                     "image": "../public/asset/img/plat_enzo.webp",
-                    "nom": "Plat d'Enzo",
+                    "nom": "Plat d Enzo",
                     "temps":"25 min",
                     "note": 1
                 },
@@ -40,7 +40,7 @@
                     "image": "../public/asset/img/plat_pokebowl.jpg",
                     "nom": "Pokki poke bowl",
                     "temps":"32 min",
-                    "note": 5
+                    "note": 3
                 },
 
                 {
