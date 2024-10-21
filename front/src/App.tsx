@@ -21,7 +21,7 @@ function App() {
         <Route index element={<Homepage />}/>
         <Route path="/search" element={<Recherche />}/>
         <Route path="/login" element={<Connexion />}/>
-        <Route path="/search/:id" element={<Recette />}/>
+        <Route path="/receipe/:id" element={<Recette />}/>
         <Route path="/*" element={<Error />}/>
       </Routes>
       <Footer/>
