@@ -28,4 +28,9 @@ interface user {
     recettesPublied: recetteInfos[];
 }
 
-export type { user, recetteInfos, recetteDetails, etapeRecette };
+interface loginResponse {
+    status: boolean;
+    message: string
+}
+
+export type { user, recetteInfos, recetteDetails, etapeRecette, loginResponse };
