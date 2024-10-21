@@ -10,7 +10,7 @@ function Recherche () {
     const openGrid = () => setisGrid(true);
     
     return (
-        <div className="flex flex-col content-center mx-auto w-4/5 ">
+        <div className="flex flex-col content-center mx-auto w-4/5 bg-white rounded-[16px] p-6 ">
         <div>
             <p className="font-Louis">Recette : {/* length du tableau filtré*/} </p>
         </div>

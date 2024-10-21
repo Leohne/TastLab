@@ -1,6 +1,7 @@
 function Recette () {
     return (
         <>
+        <h2></h2>
         </>
     )
 }

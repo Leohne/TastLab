@@ -21,4 +21,8 @@
     .list {
         @apply flex-col;
     }
+    body {
+      @apply bg-[#E9D7BF];
+      @apply h-[100vh]
+    }
   }
