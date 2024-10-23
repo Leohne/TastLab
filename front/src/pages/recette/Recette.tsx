@@ -1,7 +1,7 @@
 function Recette () {
     return (
         <>
-        <h2></h2>
+        <h2>Recette</h2>
         </>
     )
 }

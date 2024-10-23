@@ -22,6 +22,7 @@ function App() {
         <Route path="/search" element={<Recherche />}/>
         <Route path="/login" element={<Connexion />}/>
         <Route path="/receipe/:id" element={<Recette />}/>
+        <Route path="/recette" element={<Recette />}/>
         <Route path="/*" element={<Error />}/>
       </Routes>
       <Footer/>

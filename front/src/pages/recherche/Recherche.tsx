@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import RecetteView from "../../components/page/recetteview/RecetteView"
 import platData from "../../components/page/recetteview/plat.json";
 
@@ -26,7 +27,9 @@ function Recherche () {
             </div>
         </div>
         <div className={`flex w-5/5 my-20 ${isGrid ? 'gride' : 'list'}`}>
+        <Link to="/receipe">
         <RecetteView plat={platData.plat} isGrid={isGrid} /> {/* mapper via server*/}
+        </Link>
         </div>
         </div>
     )
