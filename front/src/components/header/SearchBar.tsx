@@ -19,9 +19,9 @@ const SearchBar = () => {
     };
 
     return (
-        <form className='flex flex-row' onSubmit={handleSearch}>
+        <form className='flex w-1/4 flex-row' onSubmit={handleSearch}>
             <input
-                className='w-3/5 h-full bg-white rounded p-2'
+                className=' w-2/4 bg-white rounded p-2'
                 type='text'
                 value={searchTerm}
                 onChange={handleInputChange}

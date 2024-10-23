@@ -21,6 +21,9 @@
     .list {
         @apply flex-col;
     }
+    .form {
+      @apply w-3/5 mx-auto rounded-[10px] mb-3 p-1 text-[#341f16]
+    }
     body {
       @apply bg-[#E9D7BF];
       @apply h-[100vh]
