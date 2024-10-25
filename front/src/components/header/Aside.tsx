@@ -21,7 +21,7 @@ const Aside = () => {
             </svg>
         </button> {
             isExpanded && <ul className='rounded-[16px]  bg-white '>
-                <li><button onClick={() => handleSearch("entree")} className='w-full h-full'>Entrée</button>
+                <li><button onClick={() => {setIsExpanded(!isExpanded); handleSearch("entree");}} className='w-full h-full'>Entrée</button>
                 </li>
                 <li><button onClick={() => handleSearch("entree")} className='w-full h-full'>Entrée</button>
                 </li>
