@@ -27,8 +27,8 @@ function Connexion() {
 
 
     return (<>
-        <div className='flex justify-center'>
-            <div className='flex flex-col w-1/4 p-5 my-20 text-center bg-white rounded-[16px] '> 
+        <div className='flex justify-center h-auto'>
+            <div className='flex flex-col w-2/4 p-5 my-20 text-center bg-white rounded-[16px] '> 
                 <h2 className='font-Sugar text-4xl text-[#341f16] py-7'>Connexion</h2>               
                 <form onSubmit={handleLogin} className='flex flex-col'>
                     <input className='form' type="email" placeholder="Utilisateur / Email" value={userLogin} onChange={(e) => setUserLogin(e.target.value)} />
@@ -37,7 +37,7 @@ function Connexion() {
                 </form>
 
 
-                <div className="justify-self justify-center mt-5">
+                <div className="justify-self justify-center mt-5 pb-7">
                     <p>Not a user ? </p>
                     <a href="/sign-up"> Create an account</a>
                 </div>

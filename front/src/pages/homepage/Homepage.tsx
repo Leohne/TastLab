@@ -25,10 +25,10 @@ function Homepages () {
                         </a>
                     </div> 
                 </div>
-                <div className="flex w-4/5  mx-auto flex-col">
+                <div className="flex w-4/5  mx-auto flex-col pb-12">
                     <h2 className="font-Sugar text-3xl w-3/5 mx-auto pt-20 pb-12">Dernières recettes publiées</h2>
-                    <div className="flex justify-center flex-row-reverse">
-                        <div className="pl-3">
+                    <div className="flex justify-center flex-row">
+                        <div className="pr-3">
                         <ul>
                             <li>Recette 1</li> {/* mapper via server*/}
                             <li>Recette 2</li> {/* mapper via server*/}

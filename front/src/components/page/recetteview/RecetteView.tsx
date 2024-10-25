@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import timeIcone from "/asset/icone/time.svg"
+import star from "/asset/icone/star.svg"
 
 interface plats {
     id:string,
@@ -9,21 +12,29 @@ interface plats {
 }
 
 const RecetteView: React.FC<{ plat: plats[]; isGrid: boolean }> = ({ plat, isGrid }) => {
-
+  
     const recetteSearch = plat.map((plats) => {
-        return <div className={`flex w-1/2 p-10 ${isGrid ? 'flex-col' : 'flex-row'}`} key={plats.id}>
-                    <div className="flex justify-center w-3/4">
-                        <img src={plats.cover} alt="image plat" className="flex justify-center w-15 object-cover" />
-                    </div>
-                    <div className={`${isGrid ? 'flex-row' : 'flex-col w-3/4'}`}>
-                        <div className="font-Sugar w-3/4">{plats.nom}</div>
-                        <div className="flex w-2/4 justify-between">
-                            <div className=" mx-1">{plats.temps}</div>
-                            <div className=" ml-2">{plats.note}/5</div>
+        return (
+                <div className={`flex p-10 ${isGrid ? 'w_grid' : 'w_list'}`} key={plats.id}>
+                    <Link to="/recette" /*to={`/receipe/${item.id}`}*/ className={`${isGrid ? '' : 'a_list'}`}>
+                    <div className={`${isGrid ? 'cardGrid' : 'cardList'}`}>                        
+                        <img src={plats.cover} alt="image plat" className={`object-cover rounded-[15px] ${isGrid ? 'img_grid' : 'img_list'}`} />
+                        <div className='flex flex-col justify-between w-[60%] py-2'>
+                            <div className="font-Sugar pl-2 text-2xl">{plats.nom}</div>
+                            <div className="flex justify-start">
+                                <div className="flex flex-row mx-1"> <img src={timeIcone} alt="icone temps" className='mr-2' /> {plats.temps}</div>
+                                <div className="flex ml-4">
+                                {Array.from({ length: plats.note }, (_, index) => {
+                                 return <img key={index} src={star} alt="star rate"/> ;
+                                })}
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    </Link>
                 </div>
-    })
+    )})
+
     return (
         <>
             {recetteSearch}

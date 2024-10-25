@@ -21,11 +21,34 @@
     .list {
         @apply flex-col;
     }
-    .form {
+    .a_list {
+      @apply w-[72%];
+    }
+    .cardList {
+      @apply flex flex-row w-full;
+    }
+    .cardGrid {
+      @apply flex flex-col w-full;
+    }
+    .w_grid {
+      @apply w-1/2;
+    }
+    .w_list {
+      @apply w-[80%] mx-auto;
+    }
+    .img_grid {
+      @apply max-h-[260px];
+    }
+    .img_list {
+      @apply w-3/5;
+    }
+      .form {
       @apply w-3/5 mx-auto rounded-[10px] mb-3 p-1 text-[#341f16]
     }
     body {
-      @apply bg-[#E9D7BF];
-      @apply h-[100vh]
+      @apply bg-[#E9D7BF] my-0 mx-auto max-w-[1440px];
+    }
+    #root {
+      @apply min-h-screen;
     }
   }

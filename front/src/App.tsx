@@ -15,7 +15,6 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      <>
       <Header />
       <Routes>
         <Route index element={<Homepage />}/>
@@ -26,7 +25,6 @@ function App() {
         <Route path="/*" element={<Error />}/>
       </Routes>
       <Footer/>
-      </>
       </BrowserRouter>
     </div>
   )
