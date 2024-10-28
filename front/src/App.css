@@ -37,7 +37,7 @@
       @apply w-[80%] mx-auto;
     }
     .img_grid {
-      @apply max-h-[260px];
+      @apply flex;
     }
     .img_list {
       @apply w-3/5;
@@ -50,5 +50,8 @@
     }
     #root {
       @apply min-h-screen;
+    }
+    li {
+      @apply py-2
     }
   }

@@ -17,8 +17,10 @@ const RecetteView: React.FC<{ plat: plats[]; isGrid: boolean }> = ({ plat, isGri
         return (
                 <div className={`flex p-10 ${isGrid ? 'w_grid' : 'w_list'}`} key={plats.id}>
                     <Link to="/recette" /*to={`/receipe/${item.id}`}*/ className={`${isGrid ? '' : 'a_list'}`}>
-                    <div className={`${isGrid ? 'cardGrid' : 'cardList'}`}>                        
-                        <img src={plats.cover} alt="image plat" className={`object-cover rounded-[15px] ${isGrid ? 'img_grid' : 'img_list'}`} />
+                    <div className={`${isGrid ? 'cardGrid' : 'cardList'}`}>
+                        <div className={`${isGrid ? 'img_grid' : 'img_list'}`}>
+                            <img src={plats.cover} alt="image plat" className='object-cover w-[290px] h-[400px] rounded-[15px]' />
+                        </div>                        
                         <div className='flex flex-col justify-between w-[60%] pt-auto py-2'>
                             <div className="font-Sugar pl-2 text-2xl">{plats.nom}</div>
                             <div className="flex justify-start">

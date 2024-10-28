@@ -2,16 +2,16 @@
     "plat":[
                 {
                     "id":"0",
-                    "cover": "../public/asset/img/plat_test_bibimbap.webp",
-                    "image": "../public/asset/img/plat_test_bibimbap.webp",
+                    "cover": "asset/img/plat_test_bibimbap.webp",
+                    "image": "asset/img/plat_test_bibimbap.webp",
                     "nom": "Bibimbap plat Coréen",
                     "temps":"20 min",
                     "note": 5
                 },
                 {
                     "id":"1",
-                    "cover": "../public/asset/img/plat_test_oeuf.jpg",
-                    "image": "../public/asset/img/plat_test_oeuf.jpg",
+                    "cover": "asset/img/plat_test_oeuf.jpg",
+                    "image": "asset/img/plat_test_oeuf.jpg",
                     "nom": "Oeuf au plat",
                     "temps":"10 min",
                     "note": 4
@@ -19,8 +19,8 @@
 
                 {
                     "id":"2",
-                    "cover": "../public/asset/img/plat_enzo.webp",
-                    "image": "../public/asset/img/plat_enzo.webp",
+                    "cover": "asset/img/plat_enzo.webp",
+                    "image": "asset/img/plat_enzo.webp",
                     "nom": "Plat d Enzo",
                     "temps":"25 min",
                     "note": 1
@@ -28,16 +28,16 @@
 
                 {
                 "id":"3",
-                    "cover": "../public/asset/img/plat_poisson.webp",
-                    "image": "../public/asset/img/plat_poisson.webp",
+                    "cover": "asset/img/plat_poisson.webp",
+                    "image": "asset/img/plat_poisson.webp",
                     "nom": "Poisson",
                     "temps":"5 min",
                     "note": 2
                 },
 
                 {"id":"4",
-                    "cover": "../public/asset/img/plat_pokebowl.jpg",
-                    "image": "../public/asset/img/plat_pokebowl.jpg",
+                    "cover": "asset/img/plat_pokebowl.jpg",
+                    "image": "asset/img/plat_pokebowl.jpg",
                     "nom": "Pokki poke bowl",
                     "temps":"32 min",
                     "note": 3
@@ -45,8 +45,8 @@
 
                 {
                     "id":"5",
-                    "cover": "../public/asset/img/plat_libanaise.avif",
-                    "image": "../public/asset/img/plat_libanaise.avif",
+                    "cover": "asset/img/plat_libanaise.avif",
+                    "image": "asset/img/plat_libanaise.avif",
                     "nom": "Plat Libanais",
                     "temps":"50 min",
                     "note": 0
