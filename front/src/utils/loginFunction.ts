@@ -14,6 +14,36 @@ const loginFunction = async (user: string, password: string): Promise<loginRespo
 }
 export default loginFunction;
 
+/* import { loginResponse } from "../interfaces"
+
+const loginFunction = async (user: string, password: string): Promise<loginResponse> => {
+    const fetchRequest = await fetch('http://localhost:3000/api/user/login', {
+        method: 'POST',
+        headers: { 'content-type': 'application / json' },
+        body: JSON.stringify({ userName: user, password: password })
+    });
+
+    const response = await fetchRequest.json()
+
+    if (response.status) {
+        return { status: true, message: 'Login successful' };
+    } else {
+        return { status: false, message: response.message };
+    }
+}
+export default loginFunction;
+ */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
