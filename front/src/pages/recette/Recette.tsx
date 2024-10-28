@@ -18,7 +18,7 @@ function Recette () {
                     </div>
                     <div className="flex justify-between w-3/4">
                         <article className="w-[25%] rounded-t-[105px] border-solid border-4 border-b-0 border-[#CB9D6C]">
-                            <h3 className="flex justify-center font-Sugar text-3xl pt-3">Ingrédient</h3>
+                            <h3 className="flex justify-center font-Sugar text-3xl pt-3">Ingrédients</h3>
                             <ul className="w-3/5 mx-auto py-4">
                                 <li>Oeuf</li>
                                 <li>Riz</li>
