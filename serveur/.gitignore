@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Dossiers de build (dossier généré après compilation TypeScript)
+dist/
+build/
+
+# Fichiers de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environnement local
+.env
+.env.test
+.env.production
+
+# Caches
+.cache/
+.tmp/
+
+# Fichiers spécifiques à l'IDE ou à l'éditeur
+.vscode/
+.idea/
+*.swp
+
+# Fichiers TypeScript
+*.tsbuildinfo
+
+# Fichiers lock
+package-lock.json
+yarn.lock
+
+# Couverture de test
+coverage/
+
+# Fichiers temporaires spécifiques à OS
+.DS_Store
+Thumbs.db
+
+# Ignorer les migrations SQL si elles sont générées par des outils externes
+*.sql

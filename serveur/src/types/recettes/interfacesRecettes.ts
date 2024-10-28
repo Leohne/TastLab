@@ -1,7 +1,3 @@
-interface userLoggedIn {
-    isLoggedIn: boolean;
-    userId: string;
-}
 interface recetteInfos {
     name: string;
     duration: number;
@@ -24,16 +20,4 @@ interface recetteDetails extends recetteInfos {
     content: etapeRecette[]
 }
 
-interface user {
-    userId: string;
-    email: string;
-    userName: string;
-    recettesPublied: recetteInfos[];
-}
-
-interface loginResponse {
-    status: boolean;
-    message: string
-}
-
-export type { user, recetteInfos, recetteDetails, etapeRecette, loginResponse, userLoggedIn }
+export type { etapeRecette, recetteDetails, recetteInfos }
