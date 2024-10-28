@@ -1,0 +1,25 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "email": "daenerys@targaryen.com",
+            "password": "wherearemydragons?",
+            "userName": "Dany",
+            "recettesPublied": {}
+        },
+        {
+            "id": 2,
+            "email": "serbronn@ofblackwater.com",
+            "password": "iwouldfuckher",
+            "userName": "Bronn",
+            "recettesPublied": {}
+        },
+        {
+            "id": 3,
+            "email": "hodor@hodor.com",
+            "password": "hodor",
+            "userName": "hodor",
+            "recettesPublied": {}
+        }
+    ]
+}
