@@ -1,3 +1,5 @@
+import timeIcone from "/asset/icone/time.svg"
+
 function Homepages () {
 
     return (
@@ -18,7 +20,7 @@ function Homepages () {
                         <div className="bg-[#DCC09B] rounded-b-[16px]">                            
                             <p className="font-Sugar text-2xl pl-2">Plat d Enzo</p>
                             <div className="flex  flex-row pl-2 pb-2">
-                                <p className="pr-20">15min</p>
+                                <p className="pr-20"><img src={timeIcone} alt="icone temps" className='mr-2' />15min</p>
                                 <p>02%</p>
                             </div>
                         </div>
@@ -39,7 +41,7 @@ function Homepages () {
                         <div className="bg-[#DCC09B] rounded-b-[16px]">                            
                             <p className="font-Sugar text-2xl pl-2">Bibimbap</p>
                             <div className="flex pl-2 pb-2 flex-row">
-                                <p className="pr-20">15min</p>
+                                <p className="pr-20"><img src={timeIcone} alt="icone temps" className='mr-2' />15min</p>
                                 <p>86%</p>
                             </div>
                         </div>    
