@@ -28,7 +28,7 @@
       @apply flex flex-row w-full;
     }
     .cardGrid {
-      @apply flex flex-col w-full;
+      @apply flex flex-col items-center w-full;
     }
     .w_grid {
       @apply w-1/2;
@@ -36,11 +36,30 @@
     .w_list {
       @apply w-[80%] mx-auto;
     }
-    .img_grid {
-      @apply flex;
-    }
     .img_list {
       @apply w-3/5;
+    }
+    .p_grid {
+      @apply absolute overflow-hidden top-[0] left-[0] w-full h-full z-10 hover:bg-[#0000004D] ;
+    }
+    .anim_grid {
+      position: absolute;
+      color: white;
+      transition: all 1s ease-in-out;
+      transform: translateY(-20px);
+      top: -20px;
+      opacity: 0;
+      max-height: 0;
+      z-index: 1;
+    }
+    .anim_grid:hover {
+      position: relative;
+      transition: all 1s ease-in-out;
+      transform: translateY(0);
+      opacity: 1;
+      max-height: 400px;
+      top: 20px;
+      z-index: 1;
     }
       .form {
       @apply w-3/5 mx-auto rounded-[10px] mb-3 p-1 text-[#341f16]
