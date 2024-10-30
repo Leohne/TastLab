@@ -72,7 +72,7 @@
     body {
       @apply bg-[#E9D7BF] my-0 mx-auto max-w-[1440px];
     }
-    #root {
+    main {
       @apply min-h-screen;
     }
     li {

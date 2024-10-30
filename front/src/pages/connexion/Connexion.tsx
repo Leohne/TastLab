@@ -39,10 +39,10 @@ function Connexion() {
             <div className='flex flex-col w-2/4 p-5 my-20 text-center bg-white rounded-[16px] '> 
                 <h2 className='font-Sugar text-4xl text-[#341f16] py-7'>Connexion</h2>               
                 <form onSubmit={handleLogin} className='flex flex-col'>
-                    <label htmlFor="email">Utilisateur/Email</label>
-                    <input className='form' type="email" id='email' placeholder="Utilisateur / Email" value={userLogin} onChange={(e) => setUserLogin(e.target.value)} required />
-                    <label htmlFor="password">Mot de passe</label>
-                    <input className='form' type="password" id='password' placeholder='Mot de passe' value={userPassword} onChange={(e) => setUserPassword(e.target.value)} required />
+                    <label className='flex justify-start ml-[21%]' htmlFor="email">Utilisateur/Email</label>
+                    <input className='form' type="email" id='email' value={userLogin} onChange={(e) => setUserLogin(e.target.value)} required />
+                    <label className='flex justify-start ml-[21%]' htmlFor="password">Mot de passe</label>
+                    <input className='form' type="password" id='password' value={userPassword} onChange={(e) => setUserPassword(e.target.value)} required />
                     <button className='text-[#341f16] w-1/5 mx-auto rounded-[10px] hover:bg-[#CB9D6C] hover:text-white ' type="submit">Se connecter</button>
                 </form>
 
