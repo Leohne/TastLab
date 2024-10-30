@@ -23,11 +23,6 @@ CREATE TABLE IF NOT EXISTS users (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TRIGGER set_timestamp
-BEFORE UPDATE ON users
-FOR EACH ROW
-EXECUTE FUNCTION set_current_timestamp();
-
 --forgot_password table
 CREATE TABLE IF NOT EXISTS forgot_password (
     id SERIAL PRIMARY KEY,
@@ -74,13 +69,8 @@ CREATE TABLE IF NOT EXISTS recipes (
     redactor_id INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(id)
+    FOREIGN KEY (redactor_id) REFERENCES users(id)
 );
-
-CREATE TRIGGER set_timestamp
-BEFORE UPDATE ON recipes
-FOR EACH ROW
-EXECUTE FUNCTION set_current_timestamp();
 
 --recipe_tags table
 CREATE TABLE IF NOT EXISTS recipe_tags (
