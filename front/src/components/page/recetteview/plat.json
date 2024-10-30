@@ -5,16 +5,18 @@
                     "cover": "asset/img/plat_test_bibimbap.webp",
                     "image": "asset/img/plat_test_bibimbap.webp",
                     "nom": "Bibimbap plat Coréen",
-                    "temps":"20 min",
-                    "note": 5
+                    "temps": 12,
+                    "note": 5,
+                    "date": "2019-04-22"
                 },
                 {
                     "id":"1",
                     "cover": "asset/img/plat_test_oeuf.jpg",
                     "image": "asset/img/plat_test_oeuf.jpg",
                     "nom": "Oeuf au plat",
-                    "temps":"10 min",
-                    "note": 4
+                    "temps": 10,
+                    "note": 4,
+                    "date": "2018-04-22"
                 },
 
                 {
@@ -22,8 +24,9 @@
                     "cover": "asset/img/plat_enzo.webp",
                     "image": "asset/img/plat_enzo.webp",
                     "nom": "Plat d Enzo",
-                    "temps":"25 min",
-                    "note": 1
+                    "temps":120,
+                    "note": 1,
+                    "date": "2020-03-15"
                 },
 
                 {
@@ -31,16 +34,18 @@
                     "cover": "asset/img/plat_poisson.webp",
                     "image": "asset/img/plat_poisson.webp",
                     "nom": "Poisson",
-                    "temps":"5 min",
-                    "note": 2
+                    "temps": 35,
+                    "note": 3,
+                    "date": "2024-03-22"
                 },
 
                 {"id":"4",
                     "cover": "asset/img/plat_pokebowl.jpg",
                     "image": "asset/img/plat_pokebowl.jpg",
                     "nom": "Pokki poke bowl",
-                    "temps":"32 min",
-                    "note": 3
+                    "temps": 32,
+                    "note": 3,
+                    "date": "2024-04-22"
                 },
 
                 {
@@ -48,8 +53,9 @@
                     "cover": "asset/img/plat_libanaise.avif",
                     "image": "asset/img/plat_libanaise.avif",
                     "nom": "Plat Libanais",
-                    "temps":"50 min",
-                    "note": 0
+                    "temps": 20,
+                    "note": 0,
+                    "date": "2024-04-25"
                 }
             ]
 }

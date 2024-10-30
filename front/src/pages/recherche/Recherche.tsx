@@ -3,7 +3,8 @@ import RecetteView from "../../components/page/recetteview/RecetteView"
 import platData from "../../components/page/recetteview/plat.json";
 import btn_grid from "/asset/icone/la-grille.png";
 import btn_list from "/asset/icone/liste-a-puces.png";
-import btn_filter from "/asset/icone/filtre.svg";
+import filter_star from "/asset/icone/star.svg";
+import filter_time from "/asset/icone/time.svg";
 
 
 
@@ -19,9 +20,12 @@ function Recherche () {
         </div>
         <div className="flex flex-row justify-between mt-5">
             <div className="flex flex-row justify-start w-3/5">
-                <p className="mr-5">filtre :</p>
-                <button aria-label="btn_filter">
-                    <img src={btn_filter} alt="btn_filter" />
+                <p className="mr-5 py-2">Tri :</p>
+                <button aria-label="filter_star" className="pr-4">
+                    <img src={filter_star} alt="btn_filter" />
+                </button>
+                <button aria-label="filter_time">
+                    <img src={filter_time} alt="btn_filter" />
                 </button>
             </div>                
             <div className="flex flex-row justify-end">
