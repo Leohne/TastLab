@@ -67,7 +67,7 @@
       z-index: 1;
     }
       .form {
-      @apply w-3/5 mx-auto rounded-[10px] mb-3 p-1 text-[#341f16]
+      @apply w-3/5 mx-auto rounded-[10px] mb-3 p-1 text-[#341f16] border-solid border-2 border-[#341f16]
     }
     body {
       @apply bg-[#E9D7BF] my-0 mx-auto max-w-[1440px];
