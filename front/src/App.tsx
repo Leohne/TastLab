@@ -13,20 +13,20 @@ function App() {
 
 
   return (
-    <div>
       <BrowserRouter>
       <Header />
-      <Routes>
-        <Route index element={<Homepage />}/>
-        <Route path="/search" element={<Recherche />}/>
-        <Route path="/login" element={<Connexion />}/>
-        <Route path="/receipe/:id" element={<Recette />}/>
-        <Route path="/recette" element={<Recette />}/>
-        <Route path="/*" element={<Error />}/>
-      </Routes>
+      <main>
+        <Routes>
+          <Route index element={<Homepage />}/>
+          <Route path="/search" element={<Recherche />}/>
+          <Route path="/login" element={<Connexion />}/>
+          <Route path="/receipe/:id" element={<Recette />}/>
+          <Route path="/recette" element={<Recette />}/>
+          <Route path="/*" element={<Error />}/>
+        </Routes>
+      </main>
       <Footer/>
       </BrowserRouter>
-    </div>
   )
 }
 
