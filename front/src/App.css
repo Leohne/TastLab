@@ -40,16 +40,19 @@
       @apply w-3/5;
     }
     .p_grid {
-      @apply absolute top-[0] left-[0] w-full h-full z-10 hover:bg-[#0000004D] ;
+      @apply absolute top-[0] left-[0] w-full h-full z-10 rounded-[16px] hover:bg-[#0000004D] ;
+      transition: background-color 1s ease-in-out;
     }
     .anim_grid {
-      position: absolute;
+      position: relative;
       color: white;
       transition: all 1s ease-in-out;
       transform: translateY(-20px);
       top: -20px;
       opacity: 0;
       max-height: 0;
+      width: 80%;
+      margin: 0 auto;
       z-index: 1;
     }
     .p_grid:hover > .anim_grid {
@@ -57,7 +60,9 @@
       transition: all 1s ease-in-out;
       transform: translateY(0);
       opacity: 1;
-      max-height: 400px;
+      max-height: 400px;      
+      width: 80%;
+      margin: 0 auto;
       top: 20px;
       z-index: 1;
     }
