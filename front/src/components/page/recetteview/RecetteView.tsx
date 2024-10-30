@@ -36,7 +36,7 @@ const RecetteView: React.FC<{ plat: plats[]; isGrid: boolean }> = ({ plat, isGri
                                 </p>
                             </div>
                             <div className={`flex ${isGrid ? 'justify-center' : 'justify-start'}`}>
-                                <div className="flex flex-row mx-1"> <img src={timeIcone} alt="icone temps" className='mr-2'/> {plats.temps}</div>
+                                <div className="flex flex-row mx-1"> <img src={timeIcone} alt="icone temps" className='mr-2'/>{plats.temps}</div>
                                 <div className="flex ml-4">
                                 {Array.from({ length: plats.note }, (_, index) => {
                                  return <img key={index} src={star} alt="star rate"/> ;

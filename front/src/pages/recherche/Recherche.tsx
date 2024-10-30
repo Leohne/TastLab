@@ -20,14 +20,14 @@ function Recherche () {
         <div className="flex flex-row justify-between mt-5">
             <div className="flex flex-row justify-start w-3/5">
                 <p className="mr-5">filtre :</p>
-                <button>
+                <button aria-label="btn_filter">
                     <img src={btn_filter} alt="btn_filter" />
                 </button>
             </div>                
             <div className="flex flex-row justify-end">
                 <p className="mr-10">Vue :</p>
-                <button onClick={openGrid} className="mr-10 w-8"><img src={btn_grid} alt="btn_grille"/></button>
-                <button onClick={closeGrid} className="w-8"><img src={btn_list} alt="btn_liste"/></button>
+                <button aria-label="btn_grille" onClick={openGrid} className="mr-10 w-8"><img src={btn_grid} alt="btn_grille"/></button>
+                <button aria-label="btn_liste" onClick={closeGrid} className="w-8"><img src={btn_list} alt="btn_liste"/></button>
             </div>
         </div>
         <div className={`flex w-5/5 my-20 ${isGrid ? 'gride' : 'list'}`}>
