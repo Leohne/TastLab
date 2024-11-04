@@ -73,7 +73,7 @@
       @apply bg-[#E9D7BF] my-0 mx-auto max-w-[1440px];
     }
     main {
-      @apply min-h-screen;
+      @apply min-h-[87.9vh] z-0;
     }
     li {
       @apply py-2

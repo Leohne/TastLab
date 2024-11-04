@@ -1,8 +1,9 @@
-import bibi from "../../../public/asset/img/plat_test_bibimbap.webp"
+import Step_recipe from "../../components/page/step_recipe/Step_recipe"
+import bibi from "/asset/img/plat_test_bibimbap.webp"
 
 function Recette () {
     return (
-        <div className="bg-white">
+        <div className="bg-white w-4/5 mx-auto">
             <div className="flex items-center flex-col" >
                 <h2 className="flex justify-center font-Sugar py-10 w-2/4 text-5xl">Bibimbap</h2>
                 <div className="flex items-center flex-col">
@@ -44,6 +45,7 @@ function Recette () {
                             </ul>
                         </article>
                     </div>
+                    {Step_recipe}
                 </div>
             </div>
         </div>

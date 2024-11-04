@@ -48,8 +48,8 @@ function Connexion() {
 
 
                 <div className="justify-self justify-center mt-5 pb-7">
-                    <p>Not a user ? </p>
-                    <a href="/sign-up"> Create an account</a>
+                    <p>Nouvel Utilisateur ?</p>
+                    <a href="/sign-up" className='text-[#341f16] p-2 rounded-[10px] hover:bg-[#CB9D6C] hover:text-white'> Créez un compte</a>
                 </div>
             </div>
         </div>
