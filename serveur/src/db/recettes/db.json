@@ -1,5 +1,5 @@
 {
-    "recettesInfos": [
+    "recetteInfos": [
         {
             "name": "Tarte aux aubergines, tomates et chèvre",
             "recetteId": 1,
@@ -32,7 +32,7 @@
             "userId": 17,
             "rating": 4.7,
             "numberOfVotes": 138,
-            "imgUrl": "./public/img/ile-flottatnte.jpg",
+            "imgUrl": "./public/img/ile-flottante.jpg",
             "publicationDate": "2023-07-08T17:11:27.511Z",
             "tags": [
                 "dessert"

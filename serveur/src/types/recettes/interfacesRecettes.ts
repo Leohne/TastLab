@@ -6,7 +6,7 @@ interface recetteInfos {
     numberOfVotes: number;
     imgUrl: string;
     publicationDate: Date;
-    tags: tag[]
+    tags: string[]
 }
 
 interface etapeRecette {
@@ -17,11 +17,6 @@ interface ingredient {
     id: number,
     imgUrl: string,
     name: string
-}
-interface tag {
-    name: string,
-    id: number
-
 }
 interface recetteDetails extends recetteInfos {
 
