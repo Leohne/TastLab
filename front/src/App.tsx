@@ -9,8 +9,8 @@ import Recette from './pages/recette/Recette'
 import Error from './pages/Error/Error'
 import Footer from './components/footer/Footer'
 import Signup from './pages/signup/Signup'
-import Add_recipe from './components/page/add_recipe/Add_recipe'
-import Account from './components/page/account/Account'
+import Add_recipe from './pages/add_recipe/Add_recipe'
+import Account from './pages/account/Account'
 
 function App() {
 
