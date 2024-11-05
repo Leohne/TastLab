@@ -1,12 +1,10 @@
 interface recetteInfos {
-    name: string;
-    recetteId: string;
-    userId: string;
-    rating: number;
-    numberOfVotes: number;
-    imgUrl: string;
-    publicationDate: Date;
-    tags: string[]
+    id: number;
+    title: string;
+    redactor_id: number;
+    created_at: Date;
+    updated_at: Date;
+
 }
 
 interface etapeRecette {
