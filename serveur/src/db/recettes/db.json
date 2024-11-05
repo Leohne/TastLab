@@ -1,0 +1,42 @@
+{
+    "recetteInfos": [
+        {
+            "name": "Tarte aux aubergines, tomates et chèvre",
+            "recetteId": 1,
+            "userId": 753,
+            "rating": 4.7,
+            "numberOfVotes": 137,
+            "imgURL": "./public/img/recette-tarte-tomate-aubergines",
+            "publicationDate": "2012-04-23T18:25:43.511Z",
+            "tags": [
+                "italienne",
+                "facile"
+            ]
+        },
+        {
+            "name": "Croissant au jambon",
+            "recetteId": 2,
+            "userId": 426,
+            "rating": 3.9,
+            "numberOfVotes": 27,
+            "imgUrl": "./public/img/recette-tarte-tomate-aubergines",
+            "publicationDate": "2017-08-11T17:15:33.511Z",
+            "tags": [
+                "petit déjeuner",
+                "facile"
+            ]
+        },
+        {
+            "name": "Ile flottante",
+            "recetteId": 3,
+            "userId": 17,
+            "rating": 4.7,
+            "numberOfVotes": 138,
+            "imgUrl": "./public/img/ile-flottante.jpg",
+            "publicationDate": "2023-07-08T17:11:27.511Z",
+            "tags": [
+                "dessert"
+            ]
+        }
+    ]
+}

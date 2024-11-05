@@ -1,22 +1,24 @@
 interface recetteInfos {
-    name: string;
-    duration: number;
-    rating: number;
-    RecetteId: string;
-    userId: string;
+    id: number;
+    title: string;
+    redactor_id: number;
+    created_at: Date;
+    updated_at: Date;
+
 }
 
 interface etapeRecette {
-    ingredients: string[];
-    duration: number;
     content: string;
-    id: string
+    idEtappe: string
 }
-
+interface ingredient {
+    id: number,
+    imgUrl: string,
+    name: string
+}
 interface recetteDetails extends recetteInfos {
-    publisherId: string;
-    publicationDate: Date;
-    ingredients: string[];
+
+    ingredients: ingredient[];
     content: etapeRecette[]
 }
 
