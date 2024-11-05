@@ -16,5 +16,8 @@ app.use('/', (req, res) => {
 })
 const port: number = 3000
 app.listen(port, () => {
+    console.log(process.env.DB_PASSWORD);
+    console.log(process.env.DB_PASSWORD);
     console.log('serveur en cours d`éxécution');
+
 });
