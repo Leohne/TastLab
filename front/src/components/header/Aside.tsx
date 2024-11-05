@@ -34,7 +34,7 @@ const Aside = () => {
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </button> {
-            isExpanded && <ul className='rounded-[16px]  bg-white '>
+            isExpanded && <ul className='rounded-[16px]  bg-white relative z-10 '>
                 <li><button onClick={() => {setIsExpanded(!isExpanded); handleSearch("entree");}} className='w-full h-full'>Entrée</button>
                 </li>
                 <li><button onClick={() => handleSearch("entree")} className='w-full h-full'>Entrée</button>

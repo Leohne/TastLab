@@ -36,11 +36,6 @@ const ConnectButton = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/add-recipe">
-                        <button onClick={() => {setIsExpanded(!isExpanded)}} className='w-full h-full'>Ajouter une recette</button>
-                    </Link>
-                </li>
-                <li>
                     <button onClick={() => {setIsExpanded(!isExpanded); setconnected(!connected)}} className='w-full h-full'>Déconnexion</button>
                 </li>
             </ul>

@@ -1,10 +1,11 @@
 import imgAccount from "/asset/icone/compte.png"
+import { Link } from "react-router-dom"
 
 function Account () {
 
     return (
         <div className="flex justify-between flex-row mt-10 w-full">
-            <div className="flex flex-col w-2/3">
+            <div className="flex flex-col w-2/3 border-solid border-2 border-[#CB9D6C] rounded-t-[16px] bg-white ">
                 <div className="flex flex-col items-start mt-10">
                     <h3>Recettes consultées</h3>
                 </div>
@@ -21,8 +22,11 @@ function Account () {
                 </div>
                 <div className="text-center pr-14 mt-5">                    
                     <h2>Username</h2>
-                    <h3>Email@mail.com</h3>
-                    <h3>Recette publiée : 14</h3>
+                    <p>Email@mail.com</p>
+                    <p>Recette publiée : 14</p>
+                    <Link to="/add-recipe">
+                        <button>Ajouter une recette</button>
+                    </Link>
                     <h3>Allergie</h3>
                     <ul>
                         <li>Gluten</li>
