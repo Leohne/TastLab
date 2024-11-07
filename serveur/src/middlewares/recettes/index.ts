@@ -29,7 +29,7 @@ export const searchRecipeByFreeText = async (req: Request, res: Response) => {
 export const fetchRecetteStep = async (req: Request, res: Response) => {
     const reqId = req.params.id;
     try {
-        const step: etapeRecette[] = await db<etapeRecette>('recipe_step')
+        const step: etapeRecette[] = await db<etapeRecette>('recipe_steps')
             .select('*')
             .where('recipe_id', reqId)
             .orderBy('step_index', 'asc')
