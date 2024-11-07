@@ -8,9 +8,12 @@ interface recetteInfos {
 }
 
 interface etapeRecette {
-    content: string;
-    idEtappe: string
+    id: number;
+    recipe_id: number;
+    step_index: number;
+    description: string
 }
+
 interface ingredient {
     id: number,
     imgUrl: string,
