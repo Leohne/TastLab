@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import db from '../../knex'; // Importez l'instance Knex pour la base de données
-import { recetteInfos } from '../../types/recettes/interfacesRecettes';
+import { recetteInfos, etapeRecette } from '../../types/recettes/interfacesRecettes';
 const router = express.Router();
 
 
@@ -28,4 +28,19 @@ router.get('/recettes/search', async (req: Request, res: Response) => {
     }
 }
 )
+
+router.get('/recette/:id', async (req: Request, res: Response) => {
+    const reqId = req.params.id
+    try {
+        const recetteDetails: etapeRecette[] = await db<etapeRecette>('recipe_steps')
+            .select('*')
+            .where('recipe_id', reqId)
+            .orderBy('step_index', 'asc')
+        res.json(recetteDetails);
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).send('Erreur du serveur lors de la recherche de recettes');
+    }
+})
 export default router;
