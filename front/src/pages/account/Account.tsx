@@ -17,7 +17,7 @@ function Account () {
                 </div>
             </div>
             <div className="flex flex-col items-end mt-10 w-1/3">                
-                <div className="w-[45%] bg-white rounded-[200px]">
+                <div className="w-[45%] bg-white rounded-[200px] mr-5">
                 <img src={imgAccount} alt="photo de profil" className="object-cover mx-auto w-full h-[200px]"/>
                 </div>
                 <div className="text-center pr-14 mt-5">                    
