@@ -24,6 +24,10 @@ function Add_recipe () {
           }
         }
       };
+      const handleAddStepClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        setIsExpanded(true);
+    };
 
     return (
         <div className="flex flex-col">
@@ -33,15 +37,17 @@ function Add_recipe () {
                 <label htmlFor="img_upload">Image de présentation
                 <div ref={prevision} className="w-4/5" >
                 {imgSrc ? (
-                    <img src={imgSrc} alt="Prévisualisation" className="object-cover w-full h-[400px]"/>
+                    <img src={imgSrc} alt="Prévisualisation" className="object-cover w-full h-[400px] rounded-[16px]"/>
                 ) : (
-                    <img src={img_icone} alt="Prévisualisation" className="object-cover w-full h-[400px]"/>
+                    <img src={img_icone} alt="Prévisualisation" className="object-cover w-full h-[400px] rounded-[16px]"/>
                 )}
                 </div>
                 </label>
                 <input aria-label="ajout image" type="file" id="img_upload" onChange={readUrl} className="opacity-0" />
+                <label htmlFor="presentation">Présentation</label>
+                <textarea id="presentation" name="presentation" placeholder="Le Bibimbap est un plat ..." required></textarea>
             </form>
-                <button>Ajoutez une étape</button>
+                <button onClick={handleAddStepClick}>Ajoutez une étape</button>
                 <div>
                 {isExpanded && <Step_recipe onClose={() => setIsExpanded(false)}/>}
                 </div> 

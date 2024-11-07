@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useRef,useState } from "react";
 import img_icone from "/asset/icone/img_empty2.jpg"
 
 function Step_recipe( {onClose} ) {
 
-   /* const [imgSrc, setimgSrc] = useState<string | null>(null);
+    const [imgSrc, setimgSrc] = useState<string | null>(null);
     const prevision = useRef<HTMLDivElement>(null);
 
     const readUrl = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -21,13 +21,10 @@ function Step_recipe( {onClose} ) {
             reader.readAsDataURL(picture);
           }
         }
-      };*/
+      };
 
     return (
-        <div>
-            <h2>Salut grosse pute !!</h2>
-        </div>
-        /*
+
         <div className="flex">
             <form action="submit" method="post" className="flex flex-col mx-auto w-2/4">
                 <label htmlFor="title">Titre</label>
@@ -39,14 +36,13 @@ function Step_recipe( {onClose} ) {
                 ) : (
                     <img src={img_icone} alt="Prévisualisation" className="object-cover w-full h-[400px]"/>
                 )}
-                </div>
+                </div>                
                 </label>
                 <input aria-label="ajout image" type="file" id="img_upload" onChange={readUrl} className="opacity-0" />
-                <button>Ajouter</button>
-
+                <button>Ajouter une étape</button>
             </form>
         </div>       
-         */ 
+         
    )
 }
 
