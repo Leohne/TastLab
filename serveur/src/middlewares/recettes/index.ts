@@ -17,8 +17,8 @@ export const searchRecipeByFreeText = async (req: Request, res: Response) => {
     const { searchTerm } = req.query
     try {
         const recettes: recetteInfos[] = await db<recetteInfos>('recipes').select('*')
-            .where('title', 'like', `%${searchTerm}%`)
-            .orWhere('description', 'like', `%${searchTerm}%`)
+            .where('title', 'ilike', `%${searchTerm}%`)
+            .orWhere('description', 'ilike', `%${searchTerm}%`)
         res.json(recettes)
     } catch (error) {
         console.error(error);
