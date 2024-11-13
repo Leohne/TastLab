@@ -1,49 +1,81 @@
-import { useRef,useState } from "react";
-import img_icone from "/asset/icone/img_empty2.jpg"
+import { useState } from "react";
 
-function Step_recipe( {onClose} ) {
-
-    const [imgSrc, setimgSrc] = useState<string | null>(null);
-    const prevision = useRef<HTMLDivElement>(null);
-
-    const readUrl = (e: React.ChangeEvent<HTMLInputElement>) => {
-
-        const files = e.target.files;
-        if (files && files.length > 0) {
-          const [picture] = files;
-          if (picture) {
-            const reader = new FileReader();
-            reader.onload = (event) => {
-              if (prevision.current && event.target) {
-                setimgSrc(event.target.result as string);
-              }
-            };    
-            reader.readAsDataURL(picture);
-          }
-        }
-      };
-
-    return (
-
-        <div className="flex">
-            <form action="submit" method="post" className="flex flex-col mx-auto w-2/4">
-                <label htmlFor="title">Titre</label>
-                <input aria-label="text pour le titre" type="text" id="title" />
-                <label htmlFor="img_upload">Image de présentation
-                <div ref={prevision} className="w-4/5" >
-                {imgSrc ? (
-                    <img src={imgSrc} alt="Prévisualisation" className="object-cover w-full h-[400px]"/>
-                ) : (
-                    <img src={img_icone} alt="Prévisualisation" className="object-cover w-full h-[400px]"/>
-                )}
-                </div>                
-                </label>
-                <input aria-label="ajout image" type="file" id="img_upload" onChange={readUrl} className="opacity-0" />
-                <button>Ajouter une étape</button>
-            </form>
-        </div>       
-         
-   )
+interface Step {
+  title: string;
+  image: string | null;
+  paragraphs: string[];
+  ingredient: string[];
 }
 
-export default Step_recipe
+interface StepRecipeProps {
+  step: Step;
+  index: number;
+  onStepSubmit: (newStep: Step, index: number) => void;
+}
+
+const Step_recipe: React.FC<StepRecipeProps> = ({ step, index, onStepSubmit }) => {
+  const [stepTitle, setStepTitle] = useState(step.title);
+  const [stepParagraph, setStepParagraph] = useState(step.paragraphs[0]);
+  const [stepIngredient, setStepIngredient] = useState(step.ingredient[0]);
+  const [stepImage, setStepImage] = useState(step.image);
+
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setStepImage(reader.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleSubmit = () => {
+    const newStep = {
+      title: stepTitle,
+      image: stepImage,
+      paragraphs: [stepParagraph],
+      ingredient: [stepIngredient],
+    };
+    onStepSubmit(newStep, index);
+    console.log("Recette soumise avec les étapes:", step);
+  };
+
+  return (
+    <div className="step-form">
+      <label htmlFor={`step_title_${index}`}>Titre de l'étape</label>
+      <input
+        type="text"
+        id={`step_title_${index}`}
+        value={stepTitle}
+        onChange={(e) => setStepTitle(e.target.value)}
+        required
+      />
+
+      <label htmlFor={`step_image_${index}`}>Image de l'étape</label>
+      <input type="file" id={`step_image_${index}`} onChange={handleImageChange} />
+
+      <label htmlFor={`step_ingredient_${index}`}>Ingrédients</label>
+      <textarea
+        id={`step_ingredient_${index}`}
+        value={stepIngredient}
+        onChange={(e) => setStepIngredient(e.target.value)}
+        required
+      />
+
+      <label htmlFor={`step_paragraph_${index}`}>Description de l'étape</label>
+      <textarea
+        id={`step_paragraph_${index}`}
+        value={stepParagraph}
+        onChange={(e) => setStepParagraph(e.target.value)}
+        required
+      />
+
+      {stepImage && <img src={stepImage} alt="Prévisualisation de l'étape" style={{ width: "100px" }} />}
+
+      <button onClick={handleSubmit}>MAJ TAB ESSAI</button>
+    </div>
+  );
+};
+
+export default Step_recipe;
